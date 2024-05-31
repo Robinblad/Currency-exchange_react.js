@@ -1,8 +1,18 @@
-# React + Vite
+# Currency exchanger
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+План работы:
+1. Написать приложение для отправки заявки на обмен валюты
+2. Создать React-компонент ContactForm, который содержит HTML-
+форму с тремя полями: имя (name), email (email) и сообщение
+(message). Форма должна отправлять данные на сервер при
+нажатии на кнопку отправки (Submit).
+3. Все поля формы это отдельный React компонент, который имеет
+свое состояние
+4. Так-же есть отдельный компонент который встроен в форму.
+Примерный макет будет в приложении. Главное, что бы можно было
+выбрать валюту и курс обновлялся при вводе количества валюты
+5. При отправке формы, компонент должен создавать объект
+FormData, добавлять в него значения полей формы и отправлять его
+на сервер с помощью метода fetch().
+6. После отправки формы, компонент должен отображать сообщение
+об успешной отправке и очищать поля формы.
